@@ -52,7 +52,7 @@ jobs:
       DOCS_COPY_NOTEBOOKS: 1
       ARTIFACT_DAYS: 0
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           # only Pytorch has/uses notebooks
           submodules: ${{ matrix.pkg-name == 'pytorch' }}
