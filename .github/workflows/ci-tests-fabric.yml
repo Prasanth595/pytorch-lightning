@@ -116,7 +116,7 @@ jobs:
           done
 
       - name: pip wheels cache
-        uses: actions/cache/restore@v3
+        uses: actions/cache/restore@v6
         with:
           path: ${{ env.PYPI_CACHE_DIR }}
           key: pypi_wheels
